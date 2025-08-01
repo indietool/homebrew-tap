@@ -1,8 +1,8 @@
 class Indietool < Formula
   desc "CLI tool for indie builders to manage domains, DNS, and secrets"
   homepage "https://indietool.dev"
-  url "https://github.com/indietool/cli/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "6b3be78d78c8766986f2f2c2377d7134cba8a401315561d2d497ea60b201010e"
+  url "https://github.com/indietool/cli/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "01843506702f0a35c5377214c41c0e2ab1243bd2ff6843663e58d2ab283b661e"
   license "MIT"
   head "https://github.com/indietool/cli.git", branch: "main"
 
