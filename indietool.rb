@@ -5,15 +5,15 @@
 class Indietool < Formula
   desc "An all-in-one tool for unified infrastructure management"
   homepage "https://github.com/indietool/cli"
-  version "0.0.5"
+  version "0.0.7"
   license "Apache 2"
 
   depends_on "ca-certificates" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/indietool/cli/releases/download/v0.0.5/indietool-0.0.5-darwin-amd64.tar.gz"
-      sha256 "b1d3d1119359ac5d29d28a00cb067f2e33e36a6b5a2ad0c3d5cc27e7e02be93b"
+      url "https://github.com/indietool/cli/releases/download/v0.0.7/indietool-0.0.7-darwin-amd64.tar.gz"
+      sha256 "03ef5f462759dc7213c09d79f0256d03c947662643b8671163234a29395a3f24"
 
       define_method(:install) do
         bin.install "indietool"
@@ -23,8 +23,8 @@ class Indietool < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/indietool/cli/releases/download/v0.0.5/indietool-0.0.5-darwin-arm64.tar.gz"
-      sha256 "13caf0684dd3e71291674a8db3bec2ad0570064832e599bb2c64b5d710389f8d"
+      url "https://github.com/indietool/cli/releases/download/v0.0.7/indietool-0.0.7-darwin-arm64.tar.gz"
+      sha256 "9f8aebb82b430d52376beaa0d6e7b80918258f0c98326e884b9f42028b94609c"
 
       define_method(:install) do
         bin.install "indietool"
@@ -37,8 +37,8 @@ class Indietool < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/indietool/cli/releases/download/v0.0.5/indietool-0.0.5-linux-amd64.tar.gz"
-      sha256 "2d87a92c0807b80af7235273d9e1ee7d4f53e25cfabdede11ab1ce6e5d78b50e"
+      url "https://github.com/indietool/cli/releases/download/v0.0.7/indietool-0.0.7-linux-amd64.tar.gz"
+      sha256 "a642e3030e656ef9f9d992b3011f0b6643ae028bfde523ddc4cc6362594af3f0"
       define_method(:install) do
         bin.install "indietool"
 
@@ -47,8 +47,8 @@ class Indietool < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/indietool/cli/releases/download/v0.0.5/indietool-0.0.5-linux-arm64.tar.gz"
-      sha256 "74c6d7f7a26f4eb11fb26c8e64ae5397740425d023099cb4f30ba8ad65ffe925"
+      url "https://github.com/indietool/cli/releases/download/v0.0.7/indietool-0.0.7-linux-arm64.tar.gz"
+      sha256 "8c298cac2707d1c1e58029d30dd8c24682dd7cc42116137960d6e106a91cd30a"
       define_method(:install) do
         bin.install "indietool"
 
